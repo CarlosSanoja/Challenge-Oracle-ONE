@@ -1,9 +1,13 @@
 /*Estilo para el header*/
 
 header {
+    text-align: center;
     height: 130px;
     background-color: #1e1e1e;
     font-family: 'Raleway', sans-serif;
+    border-style: solid;
+    border-color: #818181;
+    border-width: 0px 0px 2px 0px;
 }
 
 .headerPrincipal {
@@ -14,6 +18,8 @@ header {
 }
 
 .logo {
+    position: absolute;
+    left: 10%;
     height: 70px;
     transition: 500ms all;
     cursor: pointer;
@@ -24,15 +30,13 @@ header {
 }
 
 .titulo {
-    position: absolute;
-    top: 40%;
-    left: 35%;
     cursor: default;
     color: #ffffff;
     transition: 300ms all;
     font-weight: bold;
     font-style: italic;
     font-size: 20px;
+    margin: 25px 0;
 }
 
 .titulo:hover {
@@ -45,4 +49,47 @@ header {
 body {
     background-color: #424242;
     font-family: 'Raleway', sans-serif;
+}
+
+/*Estilo para el footer*/
+
+footer {
+    background-color: #1e1e1e;
+    font-family: 'Raleway', sans-serif; 
+    text-align: center;   
+}
+
+.footerPrincipal {
+    padding: 30px 0;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.logoFooter {
+    height: 70px;
+    transition: 500ms all;
+    cursor: pointer;    
+}
+
+.logoFooter:hover {
+    transform: scale(1.15);
+}
+
+.copyrigth {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.copyrigth a {
+    color: #1d8ccb;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 1s all;
+}
+
+.copyrigth a:hover, .copyrigth a:active {
+    color: #0d6d5c;
+    transform: scale(1.1);
 }
